@@ -1,0 +1,1331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <title>NISIT - FRONTEND DEVELOPER</title>
+  </head>
+
+  <body>
+    <!-- <div class="d-flex"> -->
+    <!-- sidebar -->
+    <aside
+      class="sidebar position-fixed top-0 z-1 flex-column justify-content-between align-items-center border-end-dark-theme"
+    >
+      <div class="logo">
+        <a
+          target="_blank"
+          href="http://127.0.0.1:5501/index.html"
+          class="big transition cursor-pointer primary-font h6 fw-bold"
+          >N</a
+        >
+      </div>
+      <div class="contact-detail d-flex flex-column gap-5">
+        <div class="twitter cursor-pointer">
+          <a href="https://x.com/?lang=en" target="_blank">
+            <svg
+              class="transition"
+              height="25"
+              width="25"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M10.4883 14.651L15.25 21H22.25L14.3917 10.5223L20.9308 3H18.2808L13.1643 8.88578L8.75 3H1.75L9.26086 13.0145L2.31915 21H4.96917L10.4883 14.651ZM16.25 19L5.75 5H7.75L18.25 19H16.25Z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div class="instagram cursor-pointer">
+          <a href="https://www.instagram.com/" target="_blank">
+            <svg
+              class="transition"
+              height="25"
+              width="25"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div class="facebook cursor-pointer">
+          <a href="https://www.facebook.com/" target="_blank">
+            <svg
+              class="transition"
+              height="25"
+              width="25"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div class="linkedin cursor-pointer">
+          <a href="https://in.linkedin.com/" target="_blank">
+            <svg
+              class="transition"
+              height="25"
+              width="25"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </aside>
+    <!-- sidebar end -->
+
+    <!-- tabbing  -->
+    <section class="tabbing">
+      <ul
+        class="nav nav-tabs position-fixed bottom-0 w-100 border-top-dark-theme z-3 bg-white p big fw-medium"
+        id="myTab"
+        role="tablist"
+      >
+        <li
+          class="nav-item flex-grow-1 border-1 border-black transition"
+          role="presentation"
+        >
+          <button
+            class="nav-link active w-100 h-100 z-3 d-flex justify-content-center align-items-center"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+          >
+            <svg
+              width="20"
+              height="20"
+              class="tabbing-icons"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M20 20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V11H1L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11H20V20ZM18 19V9.15745L12 3.7029L6 9.15745V19H18ZM12 17L8.64124 13.6412C7.76256 12.7625 7.76256 11.3379 8.64124 10.4592C9.51992 9.58056 10.9445 9.58056 11.8232 10.4592L12 10.636L12.1768 10.4592C13.0555 9.58056 14.4801 9.58056 15.3588 10.4592C16.2374 11.3379 16.2374 12.7625 15.3588 13.6412L12 17Z"
+              ></path>
+            </svg>
+            <span class="tabbing-text">Home</span>
+          </button>
+        </li>
+        <li class="nav-item flex-grow-1 transition" role="presentation">
+          <button
+            class="nav-link w-100 h-100 d-flex justify-content-center align-items-center"
+            id="about-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#about-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="about-tab-pane"
+            aria-selected="false"
+          >
+            <svg
+              width="20"
+              height="20"
+              class="tabbing-icons"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H4ZM13 16.083V20H17.6586C16.9423 17.9735 15.1684 16.4467 13 16.083ZM11 20V16.083C8.83165 16.4467 7.05766 17.9735 6.34141 20H11ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.2104 11 16 9.21043 16 7C16 4.78957 14.2104 3 12 3C9.78957 3 8 4.78957 8 7C8 9.21043 9.78957 11 12 11Z"
+              ></path>
+            </svg>
+            <span class="tabbing-text"> About</span>
+          </button>
+        </li>
+        <li class="nav-item flex-grow-1 transition" role="presentation">
+          <button
+            class="nav-link w-100 h-100 d-flex justify-content-center align-items-center"
+            id="Service-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#service-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="service-tab-pane"
+            aria-selected="false"
+          >
+            <svg
+              width="20"
+              height="20"
+              class="tabbing-icons"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M22 17.0022C21.999 19.8731 19.9816 22.2726 17.2872 22.8616L16.6492 20.9476C17.8532 20.7511 18.8765 20.0171 19.4649 19H17C15.8954 19 15 18.1046 15 17V13C15 11.8954 15.8954 11 17 11H19.9381C19.446 7.05369 16.0796 4 12 4C7.92038 4 4.55399 7.05369 4.06189 11H7C8.10457 11 9 11.8954 9 13V17C9 18.1046 8.10457 19 7 19H4C2.89543 19 2 18.1046 2 17V12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12V12.9987V13V17V17.0013V17.0022ZM20 17V13H17V17H20ZM4 13V17H7V13H4Z"
+              ></path>
+            </svg>
+            <span class="tabbing-text"> Experience</span>
+          </button>
+        </li>
+        <li class="nav-item flex-grow-1 transition" role="presentation">
+          <button
+            class="nav-link w-100 h-100 d-flex justify-content-center align-items-center"
+            id="portfolio-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#portfolio-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="portfolio-tab-pane"
+            aria-selected="false"
+          >
+            <svg
+              width="20"
+              height="20"
+              class="tabbing-icons"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM19 20V4H5V20H19ZM7 6H11V10H7V6ZM7 12H17V14H7V12ZM7 16H17V18H7V16ZM13 7H17V9H13V7Z"
+              ></path>
+            </svg>
+
+            <span class="tabbing-text"> Projects</span>
+          </button>
+        </li>
+
+        <li class="nav-item flex-grow-1 transition" role="presentation">
+          <button
+            class="nav-link w-100 h-100 d-flex justify-content-center align-items-center"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="contact-tab-pane"
+            aria-selected="false"
+          >
+            <svg
+              width="20"
+              height="20"
+              class="tabbing-icons"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M19 7H24V9H19V7ZM17 12H24V14H17V12ZM20 17H24V19H20V17ZM2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H16C16 18.6863 13.3137 16 10 16C6.68629 16 4 18.6863 4 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM10 11C12.21 11 14 9.21 14 7C14 4.79 12.21 3 10 3C7.79 3 6 4.79 6 7C6 9.21 7.79 11 10 11Z"
+              ></path>
+            </svg>
+            <span class="tabbing-text"> contact</span>
+          </button>
+        </li>
+      </ul>
+      <!-- tabbing data  -->
+      <div class="tab-content" id="myTabContent">
+        <!-- home section -->
+        <div
+          class="tab-pane fade show active align-content-center"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          <div class="section-wrapper hero-section">
+            <!-- home left  -->
+            <div
+              class="home-tab-left position-common p-common top-0 text-center align-content-center inner-wrapper"
+            >
+              <div
+                class="d-flex flex-column align-items-start justify-content-start text-start gap-xs"
+              >
+                <!-- <h1 class="primary-font fw-bold mb-0">I’m Nisit Prajapati.</h1> -->
+                <h1 class="primary-font fw-bold mb-0">I’m jonh doe.</h1>
+                <h5 class="primary-font mb-0">
+                  I Am,
+                  <!-- <span class="bg-light-theme fw-semibold">
+                    Front-end-developer</span
+                  > -->
+                  <span class="bg-light-theme fw-semibold"> Domain</span>
+                </h5>
+                <p class="big fw-medium text-gray">
+                  Frontend Developer with 1+ years of experience building
+                  responsive and scalable web applications using React.js, HTML,
+                  CSS, Tailwind, Bootstrap, and Ant Design. I specialize in
+                  creating clean, user-friendly interfaces and optimizing UI
+                  performance for better speed and usability. I also have basic
+                  knowledge of API integration and work closely with team
+                  members to ensure smooth project delivery and maintain
+                  high-quality standards.
+                </p>
+                <span>
+                  <a
+                    href="./assets/resume.pdf"
+                    download="Nisit_Resume.pdf"
+                    class="btn-size finbyz-button btn-form-submit d-flex justify-content-center align-items-center"
+                  >
+                    Download CV
+                  </a>
+                </span>
+              </div>
+            </div>
+            <!-- home right  -->
+            <div
+              class="home-tab-right inner-wrapper d-flex justify-content-center p-common align-items-center"
+            >
+              <div class="HR-card">
+                <!-- Window bar -->
+                <div class="HR-card__bar">
+                  <div class="HR-card__dots">
+                    <span class="HR-card__dot HR-card__dot--red"></span>
+                    <span class="HR-card__dot HR-card__dot--yellow"></span>
+                    <span class="HR-card__dot HR-card__dot--green"></span>
+                  </div>
+                  <span class="HR-card__filename"
+                    >src/components/Experience.tsx</span
+                  >
+                  <span class="HR-card__version">V1.0.42_PRO</span>
+                </div>
+
+                <!-- Code body -->
+                <div class="HR-card__body">
+                  <div class="HR-code">
+                    <div class="HR-code__line">
+                      <span class="HR-token--keyword">import</span>
+                      <span class="HR-token--plain"> React </span>
+                      <span class="HR-token--keyword">from</span>
+                      <span class="HR-token--string"> 'react'</span>
+                      <span class="HR-token--plain">;</span>
+                    </div>
+
+                    <div class="HR-code__line HR-code__line--gap"></div>
+
+                    <div class="HR-code__line">
+                      <span class="HR-token--keyword">const</span>
+                      <span class="HR-token--fn"> EngineerProfile</span>
+                      <span class="HR-token--plain"> = () =&gt; {</span>
+                    </div>
+
+                    <div class="HR-code__line HR-code__line--indent">
+                      <span class="HR-token--keyword">const</span>
+                      <span class="HR-token--plain"> skills = [</span>
+                      <span class="HR-token--string">'React'</span>
+                      <span class="HR-token--plain">, </span>
+                      <span class="HR-token--string">'Tailwind'</span>
+                      <span class="HR-token--plain">, </span>
+                      <span class="HR-token--string">'Ant design'</span>
+                      <span class="HR-token--plain">];</span>
+                    </div>
+
+                    <div class="HR-code__line HR-code__line--gap"></div>
+
+                    <div class="HR-code__line HR-code__line--indent">
+                      <span class="HR-token--keyword">return</span>
+                      <span class="HR-token--plain"> (</span>
+                    </div>
+
+                    <div class="HR-code__line HR-code__line--indent2">
+                      <span class="HR-token--tag">&lt;div</span>
+                      <span class="HR-token--attr"> className</span>
+                      <span class="HR-token--plain">=</span>
+                      <span class="HR-token--string">"p-8 bg-emerald-50"</span>
+                      <span class="HR-token--tag">&gt;</span>
+                    </div>
+
+                    <div class="HR-code__line HR-code__line--indent3">
+                      <span class="HR-token--tag">&lt;h2&gt;</span>
+                      <span class="HR-token--plain">Building the Future</span>
+                      <span class="HR-token--tag">&lt;/h2&gt;</span>
+                    </div>
+
+                    <div class="HR-code__line HR-code__line--indent3">
+                      <span class="HR-token--plain"
+                        >{skills.map(skill =&gt; (</span
+                      >
+                    </div>
+
+                    <div class="HR-code__line HR-code__line--indent4">
+                      <span class="HR-token--tag">&lt;Card</span>
+                      <span class="HR-token--attr"> key</span>
+                      <span class="HR-token--plain">={skill}</span>
+                      <span class="HR-token--tag">&gt;</span>
+                      <span class="HR-token--plain">{skill}</span>
+                      <span class="HR-token--tag">&lt;/Card&gt;</span>
+                    </div>
+
+                    <div class="HR-code__line HR-code__line--indent3">
+                      <span class="HR-token--plain">))}</span>
+                    </div>
+
+                    <div class="HR-code__line HR-code__line--indent2">
+                      <span class="HR-token--tag">&lt;/div&gt;</span>
+                    </div>
+
+                    <div class="HR-code__line HR-code__line--indent">
+                      <span class="HR-token--plain">);</span>
+                    </div>
+
+                    <div class="HR-code__line">
+                      <span class="HR-token--plain">};</span>
+                    </div>
+
+                    <div class="HR-code__line HR-code__line--gap"></div>
+
+                    <div class="HR-code__line">
+                      <span class="HR-token--keyword">export default</span>
+                      <span class="HR-token--fn"> EngineerProfile</span>
+                      <span class="HR-token--plain">;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- about section  -->
+        <div
+          class="tab-pane fade w-100"
+          id="about-tab-pane"
+          role="tabpanel"
+          aria-labelledby="about-tab"
+          tabindex="0"
+        >
+          <div class="section-wrapper">
+            <!-- about left  -->
+            <div
+              class="about-tab-left position-common top-0 p-4 text-center bg-theme inner-wrapper"
+            >
+              <div
+                class="h-100 d-flex flex-column gap-xs align-items-center justify-content-center scrolly"
+              >
+                <div
+                  class="about-profile-logo sign-font bg-white d-flex justify-content-center align-items-center text-theme"
+                >
+                  N
+                </div>
+                <h2 class="primary-font">Nisit Prajapati</h2>
+                <h5 class="primary-font">
+                  I Am,
+                  <span class="bg-light-theme"> Front-end-developer</span>
+                </h5>
+                <div
+                  class="social-media-accounts d-flex justify-content-center gap-5"
+                >
+                  <!-- <div class="twitter cursor-pointer">
+                    <a href="https://x.com/?lang=en" target="_blank">
+                      <svg
+                        class="transition"
+                        height="25"
+                        width="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M10.4883 14.651L15.25 21H22.25L14.3917 10.5223L20.9308 3H18.2808L13.1643 8.88578L8.75 3H1.75L9.26086 13.0145L2.31915 21H4.96917L10.4883 14.651ZM16.25 19L5.75 5H7.75L18.25 19H16.25Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div> -->
+                  <!-- <div class="instagram cursor-pointer">
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <svg
+                        class="transition"
+                        height="25"
+                        width="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="facebook cursor-pointer">
+                    <a href="https://www.facebook.com/" target="_blank">
+                      <svg
+                        class="transition"
+                        height="25"
+                        width="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div> -->
+                  <div class="linkedin cursor-pointer">
+                    <a
+                      href="https://in.linkedin.com/in/nisit-prajapati-b962b1250/"
+                      target="_blank"
+                    >
+                      <svg
+                        class="transition"
+                        height="25"
+                        width="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- about right  -->
+            <div
+              class="about-tab-right inner-wrapper d-flex flex-column p-common"
+            >
+              <div class="about-me d-flex flex-column gap-xs mb-lg">
+                <h3 class="primary-font mb-0 secondary-title">About Me</h3>
+                <p class="big lh-md text-justify mb-0">
+                  Frontend Developer with 1+ years of experience building
+                  modern, responsive, and scalable web applications. Skilled in
+                  React.js, HTML, CSS, Tailwind, Bootstrap, and Ant Design, I
+                  specialize in converting Figma designs into clean,
+                  pixel-perfect, and user-friendly interfaces. I focus on
+                  writing maintainable code, optimizing frontend performance,
+                  and ensuring websites work seamlessly across devices and
+                  browsers. I also have basic knowledge of API integration and
+                  collaborate closely with team members to deliver high-quality
+                  projects on time. Passionate about creating intuitive and
+                  efficient web applications that provide great user experiences
+                  while maintaining clean and scalable code.
+                </p>
+                <div
+                  class="number-data d-flex justify-content-evenly flex-wrap gap-xs"
+                >
+                  <div class="text-center">
+                    <h4 class="primary-font text-theme">5</h4>
+                    <p class="mb-0">Years of experience</p>
+                  </div>
+                  <div class="text-center">
+                    <h4 class="primary-font text-theme">10</h4>
+                    <p class="mb-0">Award Win</p>
+                  </div>
+                  <div class="text-center">
+                    <h4 class="primary-font text-theme">10K</h4>
+                    <p class="mb-0">Work Complete</p>
+                  </div>
+                </div>
+              </div>
+              <!-- skills   -->
+              <div class="about-me-skills d-flex flex-column gap-xs mb-lg">
+                <h3 class="primary-font secondary-title mb-0">
+                  Profesional Skills
+                </h3>
+                <div class="skill-outer-wrapper d-flex gap-sm">
+                  <div
+                    class="skill-sub-left flex-grow-1 gap-xs d-flex flex-column"
+                  >
+                    <div class="skill-level d-flex gap-xs align-items-center">
+                      <div class="skill-logo align-content-center">
+                        <img
+                          class=""
+                          src="./assets/images/About/skills/html.png"
+                          alt="html"
+                          height="30"
+                          width="30"
+                        />
+                      </div>
+
+                      <div class="skill-data w-100">
+                        <p
+                          class="d-flex justify-content-between gap-2xs align-items-center"
+                        >
+                          Html<strong> 95%</strong>
+                        </p>
+                        <div class="progress w-100">
+                          <div data-progress="95" class="w-100"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-level d-flex gap-xs align-items-center">
+                      <div class="skill-logo align-content-center">
+                        <img
+                          class=""
+                          src="./assets/images/About/skills/csss.png"
+                          alt="Css"
+                          height="30"
+                          width="30"
+                        />
+                      </div>
+
+                      <div class="skill-data w-100">
+                        <p
+                          class="d-flex justify-content-between gap-2xs align-items-center"
+                        >
+                          Css <strong> 85%</strong>
+                        </p>
+                        <div class="progress w-100">
+                          <div data-progress="85" class="w-100"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-level d-flex gap-xs align-items-center">
+                      <div class="skill-logo align-content-center">
+                        <img
+                          class=""
+                          src="./assets/images/About/skills/bootstrap.png"
+                          alt="Bootstrap"
+                          height="30"
+                          width="30"
+                        />
+                      </div>
+
+                      <div class="skill-data w-100">
+                        <p
+                          class="d-flex justify-content-between gap-2xs align-items-center"
+                        >
+                          Bootstrap <strong> 80%</strong>
+                        </p>
+                        <div class="progress w-100">
+                          <div data-progress="80" class="w-100"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-level d-flex gap-xs align-items-center">
+                      <div class="skill-logo align-content-center">
+                        <img
+                          class=""
+                          src="./assets/images/About/skills/gitlab.png"
+                          alt="reactjs"
+                          height="30"
+                          width="30"
+                        />
+                      </div>
+
+                      <div class="skill-data w-100">
+                        <p
+                          class="d-flex justify-content-between gap-2xs align-items-center"
+                        >
+                          Gitlab <strong> 60%</strong>
+                        </p>
+                        <div class="progress w-100">
+                          <div data-progress="60" class="w-100"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-level d-flex gap-xs align-items-center">
+                      <div class="skill-logo align-content-center">
+                        <img
+                          class=""
+                          src="./assets/images/About/skills/antd.jpg"
+                          alt="reactjs"
+                          height="30"
+                          width="30"
+                        />
+                      </div>
+
+                      <div class="skill-data w-100">
+                        <p
+                          class="d-flex justify-content-between gap-2xs align-items-center"
+                        >
+                          Ant Design <strong> 80%</strong>
+                        </p>
+                        <div class="progress w-100">
+                          <div data-progress="80" class="w-100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="skill-sub-right flex-grow-1 d-flex flex-column gap-xs"
+                  >
+                    <div class="skill-level d-flex gap-xs align-items-center">
+                      <div class="skill-logo align-content-center">
+                        <img
+                          class=""
+                          src="./assets/images/About/skills/js.png"
+                          alt="Javascript"
+                          height="30"
+                          width="30"
+                        />
+                      </div>
+
+                      <div class="skill-data w-100">
+                        <p
+                          class="d-flex justify-content-between gap-2xs align-items-center"
+                        >
+                          Javascript <strong> 70%</strong>
+                        </p>
+                        <div class="progress w-100">
+                          <div data-progress="70" class="w-100"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-level d-flex gap-xs align-items-center">
+                      <div class="skill-logo align-content-center">
+                        <img
+                          class=""
+                          src="./assets/images/About/skills/tailwind.png
+                          "
+                          alt="html"
+                          height="30"
+                          width="30"
+                        />
+                      </div>
+
+                      <div class="skill-data w-100">
+                        <p
+                          class="d-flex justify-content-between gap-2xs align-items-center"
+                        >
+                          Tailwind Css <strong> 70%</strong>
+                        </p>
+                        <div class="progress w-100">
+                          <div data-progress="70" class="w-100"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-level d-flex gap-xs align-items-center">
+                      <div class="skill-logo align-content-center">
+                        <img
+                          class=""
+                          src="./assets/images/About/skills/reactjs.png"
+                          alt="reactjs"
+                          height="30"
+                          width="30"
+                        />
+                      </div>
+
+                      <div class="skill-data w-100">
+                        <p
+                          class="d-flex justify-content-between gap-2xs align-items-center"
+                        >
+                          React Js <strong> 60%</strong>
+                        </p>
+                        <div class="progress w-100">
+                          <div data-progress="60" class="w-100"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-level d-flex gap-xs align-items-center">
+                      <div class="skill-logo align-content-center">
+                        <img
+                          class=""
+                          src="./assets/images/About/skills/figma.png"
+                          alt="reactjs"
+                          height="30"
+                          width="30"
+                        />
+                      </div>
+
+                      <div class="skill-data w-100">
+                        <p
+                          class="d-flex justify-content-between gap-2xs align-items-center"
+                        >
+                          Figma <strong> 60%</strong>
+                        </p>
+                        <div class="progress w-100">
+                          <div data-progress="60" class="w-100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- education  -->
+              <div class="d-flex flex-column gap-xs">
+                <h3 class="primary-font secondary-title mb-0">Education</h3>
+                <div class="edu-timeline d-flex flex-column" role="list">
+                  <!-- Edu 1 -->
+                  <div class="edu-item d-flex gap-2xs" role="listitem">
+                    <div class="edu-track" aria-hidden="true">
+                      <div class="edu-dot"></div>
+                      <div class="edu-line"></div>
+                    </div>
+                    <div class="edu-content">
+                      <span class="edu-year mb-0">2020 - 2024</span>
+                      <h3 class="edu-degree">Bachelor of Engineering</h3>
+                      <p class="edu-desc">
+                        Completed Bachelor’s in Computer Engineering from GTU,
+                        with specialization in web technologies and frontend
+                        development.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Edu 2 -->
+                  <div class="edu-item d-flex gap-2xs" role="listitem">
+                    <div class="edu-track" aria-hidden="true">
+                      <div class="edu-dot"></div>
+                      <div class="edu-line"></div>
+                    </div>
+                    <div class="edu-content">
+                      <span class="edu-year mb-0">2020</span>
+                      <h3 class="edu-degree">HSC — Science Stream</h3>
+                      <p class="edu-desc">
+                        Focused on Mathematics and Physics with Distinction.
+                        Developed strong analytical and problem-solving
+                        foundations.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Edu 3 -->
+                  <div class="edu-item d-flex gap-2xs" role="listitem">
+                    <div class="edu-track" aria-hidden="true">
+                      <div class="edu-dot"></div>
+                    </div>
+                    <div class="edu-content">
+                      <span class="edu-year mb-0">2018</span>
+                      <h3 class="edu-degree">SSC</h3>
+                      <p class="edu-desc">
+                        Foundation years with excellence in science and
+                        logic-based subjects.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- service section  -->
+        <div
+          class="tab-pane fade"
+          id="service-tab-pane"
+          role="tabpanel"
+          aria-labelledby="service-tab"
+          tabindex="0"
+        >
+          <div class="section-wrapper">
+            <!-- service left  -->
+            <div
+              class="service-tab-left position-common top-0 text-center bg-theme p-common inner-wrapper"
+            >
+              <div class="position-common top-0 text-start">
+                <div class="d-flex flex-column gap-xs text-start">
+                  <h2 class="primary-font">Experience</h2>
+                  <p class="big lh-md text-justify">
+                    Webdev services encompass a range of offerings aimed at
+                    enhancing user experiences and interfaces across digital
+                    products. Here are some key services typically provided by
+                    web developers.
+                  </p>
+                  <span>
+                    <button class="btn-size finbyz-button btn-form-submit">
+                      Contact Me
+                    </button></span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- service right  -->
+            <div
+              class="service-tab-right inner-wrapper d-flex flex-column p-common"
+            >
+              <div id="experience" aria-labelledby="exp-title"></div>
+              <div class="d-flex flex-column gap-xs">
+                <h3 class="primary-font secondary-title sm-5 mb-sm-0">
+                  Professional Experience
+                </h3>
+                <div class="edu-timeline d-flex flex-column" role="list">
+                  <!-- Edu 1 -->
+                  <div class="edu-item d-flex gap-2xs" role="listitem">
+                    <div class="edu-track" aria-hidden="true">
+                      <div class="edu-dot"></div>
+                      <div class="edu-line"></div>
+                    </div>
+                    <div class="edu-content d-flex flex-column gap-xs">
+                      <div
+                        class="d-flex justify-content-between flex-wrap gap-2xs"
+                      >
+                        <h3 class="edu-year mb-0">Front End Developer</h3>
+                        <h3 class="edu-year mb-0">White Orange Software</h3>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between flex-wrap gap-2xs"
+                      >
+                        <span
+                          class="edu-degree d-flex justify-content-end mb-0"
+                        >
+                          Lead Frontend Developer – Admin Panels</span
+                        >
+                        <span
+                          class="edu-degree text-capitalize d-flex justify-content-end mb-0"
+                        >
+                          07/2024-Present</span
+                        >
+                      </div>
+
+                      <p class="edu-desc">
+                        Leading frontend development for two admin dashboards:
+                        MatchPoint (tennis league management) and CJS (local
+                        services management). Built responsive and user-friendly
+                        interfaces using React.js, HTML, CSS, Tailwind, and Ant
+                        Design. Optimized performance, reduced bundle size, and
+                        ensured scalable code. Mentoring a team of 2 junior
+                        developers. collaborated with backend and design teams
+                        to deliver high-quality dashboards.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Edu 2 -->
+                  <div class="edu-item d-flex gap-2xs" role="listitem">
+                    <div class="edu-track" aria-hidden="true">
+                      <div class="edu-dot"></div>
+                      <div class="edu-line"></div>
+                    </div>
+                    <div class="edu-content d-flex flex-column gap-xs">
+                      <div
+                        class="d-flex justify-content-between flex-wrap gap-2xs"
+                      >
+                        <h3 class="edu-year mb-0">Front End Intern</h3>
+                        <h3 class="edu-year mb-0">Silico Software Solution</h3>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between flex-wrap gap-2xs"
+                      >
+                        <span
+                          class="edu-degree d-flex justify-content-end mb-0"
+                        >
+                          Frontend Development Internship</span
+                        >
+                        <span
+                          class="edu-degree d-flex justify-content-end mb-0"
+                        >
+                          01/2024-06/2024</span
+                        >
+                      </div>
+
+                      <p class="edu-desc">
+                        Developed responsive web pages using HTML, CSS,
+                        JavaScript, and React.js. Learned Git and GitLab for
+                        version control and collaborated with team members to
+                        implement UI designs effectively.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Edu 3 -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- portfolio  -->
+        <div
+          class="tab-pane fade"
+          id="portfolio-tab-pane"
+          role="tabpanel"
+          aria-labelledby="portfolio-tab"
+          tabindex="0"
+        >
+          <div class="section-wrapper">
+            <!-- portfolio left  -->
+            <div
+              class="portfolio-tab-left position-common top-0 p-common bg-theme inner-wrapper"
+            >
+              <div class="d-flex flex-column gap-xs">
+                <div class="d-flex flex-column gap-xs">
+                  <h2 class="primary-font">Projects</h2>
+                  <p class="big lh-md text-justify">
+                    Webdev services encompass a range of offerings aimed at
+                    enhancing user experiences and interfaces across digital
+                    products. Here are some key services typically provided by
+                    web developers.
+                  </p>
+                </div>
+                <span>
+                  <button class="btn-size finbyz-button btn-form-submit">
+                    Visit
+                  </button></span
+                >
+              </div>
+            </div>
+            <!-- portfolio right  -->
+            <div
+              class="inner-wrapper d-flex flex-column p-common gap-base h-100"
+            >
+              <!-- PROJECT-3  -->
+              <div class="project-content py-xs px-xs">
+                <div class="">
+                  <span class="eyebrow text-theme mb-2 fw-medium"
+                    >Health & Wellness</span
+                  >
+                  <h3 class="project-title mb-0">Birth & Brodo</h3>
+                </div>
+                <p class="project-desc mb-0">
+                  A thoughtfully designed landing page for a postpartum meal
+                  service, focused on healing, recovery, and rest. Features warm
+                  visuals, clear messaging, and a conversion-focused waitlist
+                  flow.
+                </p>
+                <div class="mb-3">
+                  <p class="project-section-label mb-3 fw-medium">
+                    Used Technologies
+                  </p>
+                  <div class="tags-row d-flex gap-2xs flex-wrap">
+                    <span class="tag">Next.js</span>
+                    <span class="tag">GSAP</span>
+                    <span class="tag">Gitlab</span>
+                    <span class="tag">Responsive Design</span>
+                  </div>
+                </div>
+                <div>
+                  <p class="project-section-label mb-3 fw-medium">
+                    My Contribution
+                  </p>
+                  <p class="contrib-text mb-0">
+                    Developed a visually rich landing page with reusable
+                    components, implemented responsive layouts, and optimized
+                    CTA sections like the waitlist form for better user
+                    engagement.
+                  </p>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://birth-brodo.web.app/"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg
+                      height="20"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M18.3638 15.5355L16.9496 14.1213L18.3638 12.7071C20.3164 10.7545 20.3164 7.58866 18.3638 5.63604C16.4112 3.68341 13.2453 3.68341 11.2927 5.63604L9.87849 7.05025L8.46428 5.63604L9.87849 4.22182C12.6122 1.48815 17.0443 1.48815 19.778 4.22182C22.5117 6.95549 22.5117 11.3876 19.778 14.1213L18.3638 15.5355ZM15.5353 18.364L14.1211 19.7782C11.3875 22.5118 6.95531 22.5118 4.22164 19.7782C1.48797 17.0445 1.48797 12.6123 4.22164 9.87868L5.63585 8.46446L7.05007 9.87868L5.63585 11.2929C3.68323 13.2455 3.68323 16.4113 5.63585 18.364C7.58847 20.3166 10.7543 20.3166 12.7069 18.364L14.1211 16.9497L15.5353 18.364ZM14.8282 7.75736L16.2425 9.17157L9.17139 16.2426L7.75717 14.8284L14.8282 7.75736Z"
+                      ></path>
+                    </svg>
+                    Live Demo
+                  </a>
+                  <!-- <a
+      href="#"
+      class="project-link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span class="link-icon">&lt;/&gt;</span> View Code
+    </a> -->
+                </div>
+              </div>
+
+              <!-- PROJECT-2  -->
+              <div class="project-content py-xs px-xs">
+                <div class="">
+                  <span class="eyebrow text-theme mb-2 fw-medium"
+                    >Local Services Management</span
+                  >
+                  <h3 class="project-title mb-0">CJS Admin Dashboard</h3>
+                </div>
+                <p class="project-desc mb-0">
+                  A powerful admin panel for managing local services, jobs, and
+                  customer requests. Enables administrators to track job types,
+                  manage categories, and monitor workflow efficiently.
+                </p>
+                <div class="mb-3">
+                  <p class="project-section-label mb-3 fw-medium">
+                    Used Technologies
+                  </p>
+                  <div class="tags-row d-flex gap-2xs flex-wrap">
+                    <span class="tag">React.js</span>
+                    <span class="tag">Ant Design</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Swiper</span>
+                    <span class="tag">Gitlab</span>
+                    <span class="tag">Figma</span>
+                    <span class="tag">HTML & CSS</span>
+                  </div>
+                </div>
+                <div>
+                  <p class="project-section-label mb-3 fw-medium">
+                    My Contribution
+                  </p>
+                  <p class="contrib-text mb-0">
+                    Led frontend development for the dashboard, implementing
+                    responsive layouts and interactive components for managing
+                    job types, categories, and service entries. Converted Figma
+                    designs into pixel-perfect interfaces using React.js, module
+                    CSS and Ant Design. Integrated form validations, tables, and
+                    UI feedback elements, ensured cross-browser compatibility,
+                    and maintained clean, reusable code. Managed version control
+                    using GitLab and collaborated closely with backend and
+                    design teams for smooth project delivery.
+                  </p>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://lockbizz.com/jobs?action=add"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg
+                      height="20"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M18.3638 15.5355L16.9496 14.1213L18.3638 12.7071C20.3164 10.7545 20.3164 7.58866 18.3638 5.63604C16.4112 3.68341 13.2453 3.68341 11.2927 5.63604L9.87849 7.05025L8.46428 5.63604L9.87849 4.22182C12.6122 1.48815 17.0443 1.48815 19.778 4.22182C22.5117 6.95549 22.5117 11.3876 19.778 14.1213L18.3638 15.5355ZM15.5353 18.364L14.1211 19.7782C11.3875 22.5118 6.95531 22.5118 4.22164 19.7782C1.48797 17.0445 1.48797 12.6123 4.22164 9.87868L5.63585 8.46446L7.05007 9.87868L5.63585 11.2929C3.68323 13.2455 3.68323 16.4113 5.63585 18.364C7.58847 20.3166 10.7543 20.3166 12.7069 18.364L14.1211 16.9497L15.5353 18.364ZM14.8282 7.75736L16.2425 9.17157L9.17139 16.2426L7.75717 14.8284L14.8282 7.75736Z"
+                      ></path>
+                    </svg>
+                    Live Demo
+                  </a>
+                  <!-- <a
+      href="#"
+      class="project-link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span class="link-icon">&lt;/&gt;</span> View Code
+    </a> -->
+                </div>
+              </div>
+              <!-- PROJECT-1  -->
+              <div class="project-content py-xs px-xs">
+                <div class="">
+                  <span class="eyebrow text-theme mb-2 fw-medium"
+                    >Sports Management</span
+                  >
+                  <h3 class="project-title mb-0">MatchPoint Admin Dashboard</h3>
+                </div>
+                <p class="project-desc mb-0">
+                  A comprehensive admin panel for managing tennis leagues and
+                  tournaments. Allows organizers to track players, matches,
+                  schedules, and league standings efficiently.
+                </p>
+                <div class="mb-3">
+                  <p class="project-section-label mb-3 fw-medium">
+                    Used Technologies
+                  </p>
+                  <div class="tags-row d-flex gap-2xs flex-wrap">
+                    <span class="tag">React.js</span>
+                    <span class="tag">Swiper</span>
+                    <span class="tag">Ant Design</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML & CSS</span>
+                  </div>
+                </div>
+                <div>
+                  <p class="project-section-label mb-3 fw-medium">
+                    My Contribution
+                  </p>
+                  <p class="contrib-text mb-0">
+                    Led the frontend development, designing responsive and
+                    user-friendly interfaces. Implemented dynamic components for
+                    player and match management, integrated forms and tables
+                    using Ant Design, and ensured smooth performance across
+                    devices.
+                  </p>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://manage.matchpointtennisapp.com/"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg
+                      height="20"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M18.3638 15.5355L16.9496 14.1213L18.3638 12.7071C20.3164 10.7545 20.3164 7.58866 18.3638 5.63604C16.4112 3.68341 13.2453 3.68341 11.2927 5.63604L9.87849 7.05025L8.46428 5.63604L9.87849 4.22182C12.6122 1.48815 17.0443 1.48815 19.778 4.22182C22.5117 6.95549 22.5117 11.3876 19.778 14.1213L18.3638 15.5355ZM15.5353 18.364L14.1211 19.7782C11.3875 22.5118 6.95531 22.5118 4.22164 19.7782C1.48797 17.0445 1.48797 12.6123 4.22164 9.87868L5.63585 8.46446L7.05007 9.87868L5.63585 11.2929C3.68323 13.2455 3.68323 16.4113 5.63585 18.364C7.58847 20.3166 10.7543 20.3166 12.7069 18.364L14.1211 16.9497L15.5353 18.364ZM14.8282 7.75736L16.2425 9.17157L9.17139 16.2426L7.75717 14.8284L14.8282 7.75736Z"
+                      ></path>
+                    </svg>
+                    Live Demo
+                  </a>
+                  <!-- <a
+      href="#"
+      class="project-link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span class="link-icon">&lt;/&gt;</span> View Code
+    </a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- contact section  -->
+        <div
+          class="tab-pane fade"
+          id="contact-tab-pane"
+          role="tabpanel"
+          aria-labelledby="contact"
+          tabindex="0"
+        >
+          <div class="section-wrapper">
+            <!-- contact left  -->
+            <div
+              class="contact-tab-left align-content-center position-common top-0 p-common bg-theme inner-wrapper"
+            >
+              <div class="d-flex flex-column gap-xs">
+                <div class="d-flex flex-column gap-xs">
+                  <h2 class="primary-font">Let’s Build Something Amazing</h2>
+                  <p class="big lh-md text-start">
+                    I create modern, responsive websites that look good and work
+                    smoothly. Let’s bring your ideas to life.
+                  </p>
+                </div>
+                <div class="d-flex flex-column gap-xs primary-font">
+                  <span class="phone d-flex gap-xs align-items-center">
+                    <svg
+                      height="20"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M19 7H24V9H19V7ZM17 12H24V14H17V12ZM20 17H24V19H20V17ZM2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H16C16 18.6863 13.3137 16 10 16C6.68629 16 4 18.6863 4 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM10 11C12.21 11 14 9.21 14 7C14 4.79 12.21 3 10 3C7.79 3 6 4.79 6 7C6 9.21 7.79 11 10 11Z"
+                      ></path>
+                    </svg>
+                    <a
+                      class="contact p fw-light"
+                      href="tel:  +918460614835"
+                      target="_blank"
+                      >+91 84606-14835</a
+                    >
+                  </span>
+                  <span class="mail d-flex gap-xs align-items-center">
+                    <svg
+                      height="20"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M21 3C21.5523 3 22 3.44772 22 4V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5V4C2 3.44772 2.44772 3 3 3H21ZM8 15V17H0V15H8ZM5 10V12H0V10H5ZM19.5659 5H4.43414L12 11.8093L19.5659 5Z"
+                      ></path>
+                    </svg>
+                    <a
+                      class="mail p fw-light"
+                      href="mailto:nisitprajapati9999@gmail.com"
+                      target="_blank"
+                      >nisitprajapati9999@gmail.com</a
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- contact right  -->
+            <div
+              class="contact-tab-right align-content-center justify-content-center inner-wrapper d-flex flex-column p-common"
+            >
+              <form id="contact-form" class="d-flex flex-column gap-xs w-100">
+                <h4 class="primary-font secondary-title mb-3">
+                  Reach Me Anytime
+                </h4>
+
+                <div class="name-input gap-xs d-flex">
+                  <div class="flex-grow-1">
+                    <input
+                      type="text"
+                      name="user_name"
+                      class="form-control p md"
+                      placeholder="Enter name..."
+                      required
+                    />
+                  </div>
+                  <div class="flex-grow-1">
+                    <input
+                      type="email"
+                      name="user_email"
+                      class="form-control p md"
+                      placeholder="name@example.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <input
+                    type="text"
+                    name="subject"
+                    class="form-control p md"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <textarea
+                    name="message"
+                    class="form-control p md"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+
+                <span>
+                  <button
+                    type="submit"
+                    class="btn-size finbyz-button btn-form-submit mt-3"
+                  >
+                    Get In Touch
+                  </button>
+                </span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- tabbing data end  -->
+    </section>
+    <!-- tabbing end  -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("tIQBLi4h8vwzHRVN5");
+      })();
+
+      const form = document.getElementById("contact-form");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_oy3xbhe", "template_41rtvwk", form).then(
+          function () {
+            alert("Message sent successfully ✅");
+
+            form.reset();
+          },
+          function (error) {
+            alert("Failed ❌ " + JSON.stringify(error));
+          },
+        );
+      });
+    </script>
+    <script src="./assets/javascript/script.js"></script>
+    <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
