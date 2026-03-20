@@ -1,0 +1,221 @@
+/* responsive  */
+@media screen and (max-width: 1799px) {
+  .pricing-card button {
+    min-width: 20rem;
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  :root {
+    font-size: 8px;
+  }
+
+  .pricing-btn {
+    margin-bottom: -30px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  :root {
+    font-size: 7px;
+    --space-lg: 3.5rem;
+    --text-sm: 18px;
+    --text-xs: 16px;
+    --text-2xs: 14px;
+    /* --text-3xs: 12px; */
+  }
+
+  .skill-outer-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .profile-back {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1279px) {}
+
+@media screen and (max-width: 1199px) {
+  :root {
+    --text-3xl: 6rem;
+
+    --space: 6rem;
+    --text-sm: 16px;
+    --text-xs: 14px;
+    --text-2xs: 12px;
+  }
+
+  .common-right-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  :root {
+    --text-3xl: 4.8rem;
+    --text-2xl: 3.5rem;
+    --text-xl: 3rem;
+    --text-lg: 22px;
+    --text-md: 22px;
+    --text-base: 20px;
+    --text-sm: 18px;
+    --text-xs: 16px;
+    --text-2xs: 14px;
+    --space-xs: 10px;
+  }
+
+
+
+  .section-wrapper {
+    flex-direction: column;
+  }
+
+  .hero-section.section-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .p-common {
+    padding: 30px;
+  }
+
+  .pricing-wrapper {
+    flex-direction: column;
+  }
+
+  aside {
+    bottom: calc(100vh - var(--bar-size));
+  }
+
+  .inner-wrapper {
+    width: calc(100vw - var(--bar-size));
+    min-height: unset;
+    /* margin-bottom: var(--space-base); */
+  }
+
+  .tabbing-text {
+    display: none;
+  }
+
+  .tabbing-icons {
+    display: block;
+  }
+
+  .home-tab-left {
+    order: 2;
+  }
+
+
+  .position-common {
+    position: unset;
+  }
+
+  .twitter svg,
+  .instagram svg,
+  .linkedin svg,
+  .facebook svg {
+    height: 20px;
+    width: 20px;
+  }
+
+  .common-right-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #service-tab-pane .scrolly,
+  .about-tab-right.scrolly {
+    overflow-y: unset;
+  }
+
+  .service-card-logo {
+    margin-top: -40px;
+  }
+
+  .p-common {
+    padding: 30px 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 575px) {
+  :root {
+    font-size: 7px;
+    --text-3xl: 3.7rem;
+    --text-2xl: 3.2rem;
+    --text-xl: 22px;
+    --text-base: 20px;
+    --text-md: 18px;
+    --text-sm: 16px;
+    --text-xs: 16px;
+    --text-2xs: 14px;
+    --space-xs: 15px;
+    --space-2xs: 6px;
+  }
+
+  .home-tab-right {
+    display: none;
+  }
+
+  .p-common {
+    padding: 15px;
+  }
+
+  .common-right-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-back,
+  .about-tab-left img {
+    height: auto;
+    aspect-ratio: 1/1;
+    width: 150px;
+  }
+
+  .review-card {
+    flex-direction: column;
+  }
+
+  .pricing-right {
+    margin-bottom: 60px;
+  }
+
+  .name-input {
+    flex-wrap: wrap;
+  }
+
+  .about-profile-logo {
+    max-width: 100px;
+    font-size: 46px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  aside {
+    display: none;
+    position: relative;
+  }
+
+  .review-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .tab-content,
+  .inner-wrapper,
+  .tab-content {
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 399px) {}
+
+@media screen and (max-width: 351px) {}

@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("./WorkSans-Regular.woff2") format("woff2"),
+    url("./WorkSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("./WorkSans-Medium.woff2") format("woff2"),
+    url("./WorkSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("./WorkSans-Bold.woff2") format("woff2"),
+    url("./WorkSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("./WorkSans-SemiBold.woff2") format("woff2"),
+    url("./WorkSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sora";
+  src:
+    url("./Sora-Bold.woff2") format("woff2"),
+    url("./Sora-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sora";
+  src:
+    url("./Sora-Light.woff2") format("woff2"),
+    url("./Sora-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sora";
+  src:
+    url("./Sora-Medium.woff2") format("woff2"),
+    url("./Sora-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sora";
+  src:
+    url("./Sora-Regular.woff2") format("woff2"),
+    url("./Sora-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sora";
+  src:
+    url("./Sora-SemiBold.woff2") format("woff2"),
+    url("./Sora-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
