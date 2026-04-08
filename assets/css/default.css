@@ -611,7 +611,7 @@ textarea {
 
 /* common sections */
 .section-wrapper {
-  padding-bottom: var(--bar-size);
+  
   height: 100%;
   width: 100%;
   max-height: inherit;
