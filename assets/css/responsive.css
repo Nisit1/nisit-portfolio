@@ -71,6 +71,7 @@
 
 
   .section-wrapper {
+    padding-bottom: var(--bar-size);
     flex-direction: column;
   }
 
